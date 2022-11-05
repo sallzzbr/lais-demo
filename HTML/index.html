@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/styles1.css" />
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-glyphs/30/000000/cat-head.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto-Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3c2780cb98.js" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <a href="#sobre">
+                    <li>SOBRE</li>
+                </a>
+                <a href="#projetos">
+                    <li>PROJETOS</li>
+                </a>
+                <a href="#contato">
+                    <li>CONTATO</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- SEÇÃO 1 - SOBRE -->
+
+        <section id="sobre">
+            <img class="logo"
+                src="../Imagens/Eu.gif"
+                alt="Autorretrato" />
+            <h1>Oi,</h1>
+            <p class="sobre-text">Me chamo Laís Peterlevitz, tentando ser Motion Designer. Amo animações 2D e meus gatos
+            </p>
+        </section>
+
+
+        <!-- SEÇÃO 2 - PROJETOS -->
+
+        <section id="projetos">
+            <h2 class="titulo-projetos">Alguns dos meus projetos</h2>
+            <div class="projeto-flex">
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../Imagens/Vivid.gif"
+                                    class="d-block w-100"
+                                    alt="Gif de uma tela animada de um homem olhando pela janela para uma cidade futurística">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Imagens/InfiniteLoops.gif"
+                                    class="d-block w-100" alt="Menina em um trem, cidade futurística ao fundo">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text one">Animação para duas músicas de um álbum de Arion's Paradigm</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../Imagens/Cenários.gif" class="card-img-top"
+                        alt="Animação de vários cenários diferentes, uma floresta, uma cidade e espaço">
+                    <div class="card-body">
+                        <p class="card-text two">Animação para vídeos educativos</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../Imagens/Capaae.png" class="card-img-top" alt="Ilustração de uma elfa">
+                    <div class="card-body">
+                        <p class="card-text three">Ilustração para a revista Alarums and Excursions</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="button" class="button-projeto">MAIS PROJETOS</button>
+            <script type="text/javascript">
+                document.getElementById("button").onclick = function () {
+                    location.href = "./projetos.html";
+                };
+            </script>
+        </section>
+
+        <!-- SEÇÃO 3 - CONTATO -->
+
+        <section id="contato">
+            <h2>Contatos</h2>
+            <div class="contatos">
+                <a href="" target="_blank">
+                    <div class="iconescon">
+                        <i class="fa-brands fa-instagram fa-5x"></i>
+                        <p>@laisvitzz</p>
+                    </div>
+                </a>
+                <a href="./email.html">
+                    <div class="iconescon">
+                        <i class="fa-regular fa-envelope fa-5x"></i>
+                        <p class="email">laispeterlevitz</p>
+                        <p class="email">@gmail.com</p>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="iconescon">
+                        <i class="fa-solid fa-mobile-screen-button fa-5x"></i>
+                        <p>(xx)x xxxx-xxxx</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Tentativa de Site
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
